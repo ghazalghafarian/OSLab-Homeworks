@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{amsmath}
+
+
+\begin{document}
+
+\title{HOMEWORK 9}
+\maketitle
+
+\section{Formula}
+\(x^2 + y^2 = z^2\)
+
+\section{Table}
+\begin{table}[h]
+    \begin{center}
+     \begin{tabular}{|c|c|c|}
+       \hline
+       \textbf{X} & \textbf{Y} & \textbf{Z}\\
+       \hline
+       3 & 4 & 5 \\
+       \hline
+       6 & 8 & 10 \\
+       \hline
+       9 & 12 & 15 \\
+       \hline
+     \end{tabular}
+     \end{center}
+\end{table}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=5cm]{pic}
+\end{figure}
+
+\section{Text}
+You are strong.\\
+Don't pay attention to the words of others who want to make you look weak.\\
+You can handle everything.\\
+
+\section{Code}
+(To be complete or not)\\
+\begin{lstlisting}[language=c++]
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	int N, sum = 0;
+	cin >> N;
+	for (int i = 1; i < N; i++)
+	{
+		if (N % i == 0)
+			sum += i;
+	}
+	if (sum == N)
+		cout << "YES" << endl;
+	else
+		cout << "NO" << endl;
+	return 0;
+}
+\end{lstlisting}
+
+\end{document} 
